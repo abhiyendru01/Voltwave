@@ -1,0 +1,58 @@
+
+.button {
+  position:fixed;
+  padding: 10px 30px;
+  font-size: 0.7rem;
+  background: rgba(224, 215, 205, 0.477);
+  color: #000000;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  text-shadow: 0 0 15px #fffae4;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.button:hover {
+  color: #fffae4;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(224, 215, 205, 0.285);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.credit{
+    font-family: system-ui;
+    color: #fffae4;
+    justify-content: bottom;
+    width: 99.9%;
+    height: 100%;
+}
+.Home {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    background: rgba(224, 215, 205, 0.477);
+    color: #000000;
+    justify-content: space-between center;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    text-shadow: 0 0 15px #fffae4;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition:0;
+    z-index:0;
+  }

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ <link rel="shortcut icon" href="https://library.kissclipart.com/20180902/zrq/kissclipart-electric-logo-png-clipart-electricity-clip-art-d80b8ffca275c199.jpg">
+  <meta charset="UTF-8">
+  <title>Voltwave</title>
+<link rel="stylesheet" href="loginstyle.css">
+
+</head>
+<body>
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Voltwave Electricity</h1>
+		<p class="moto">Lighting the Way to a Brighter Tomorrow.</p>
+		<span>
+			<p>login with social account</p>
+			<a href="https://www.facebook.com"><i class="facebook" >Login with Google</i></a>
+			<a href="https://www.twitter.com"><i class="twitter" >Login with Twitter</i></a>
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="#">Create Your Account</a> it takes less than a minute</p>
+		
+		<div class="inputs"><form name="f" onsubmit="return validate()" action="">
+			<input name="name"id="username" type="text" onclick="shadow()" placeholder="user name">
+			<br>
+			<input name="pass" id="password" type="password" onclick="shadow()"placeholder="password">
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+	<label>
+		<input type="checkbox" name="item" checked/>
+		<span class="text-checkbox"></span>
+	</label>
+			<a href=""><p>forget password?</p></a>
+		</div>
+			
+			<br>
+
+			<a button id="login" class="login" href="project home page.html">login</a></button id>
+			 
+			
+			<script>
+		function validate()
+		{   var name=document.f.name.value;
+		    var password=document.f.pass.value;
+			var login=document.f.login.value;
+		 if(name==null || name=="")
+			
+			{
+				alert("Name can't be blank");
+		   		  return false;
+			}
+		if(password.length<6)
+			{
+			alert("password must be atleast 6 digits");
+				return false;
+			 }
+			 if(name=="Aman");
+			 {
+			alert("Sorry Aman we don't want to give you electricity!");
+				return false;
+			 }
+			
+		}
+	</script>
+	<script src="script.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</div>
+	
+</div>
+  
+</body>
+</html>
